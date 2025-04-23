@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#{margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url('./Images/backgroudCalc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+h1 {
+    font-family: 'Jersey 10', cursive;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent; /* Remove o fundo */
+    padding: 42px 90px;
+    border: none;
+    border-radius: 6px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255 ,0.5); /* Adiciona sombra no texto */
+}
+
+h2 {
+    font-family: 'Jersey 10', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #C6A9FF;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-family: 'Jersey 10', cursive;
+    margin-bottom: 0.5rem;
+    color: #C6A9FF;
+    font-size: 3rem;
+}
+
+.titleH2 {
+    font-family: 'Jersey 10', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #C6A9FF;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+input, select {
+    width: 100%;
+    font-family: 'Jersey 10', cursive;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #C6A9FF;
+    color: white;
+    border-radius: 4px;
+    font-size: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(122, 67, 190, 0.3);
+}
+
+.convert {
+    background-color: #7A43BE;
+    font-family: 'Jersey 10', cursive;
+    color: #C6A9FF;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.back {
+    background-color: #436EBE;
+    font-family: 'Jersey 10', cursive;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute; /* Posiciona o elemento no canto */
+    bottom: 10px;
+    right: 10px;
+}
+
+button {
+    background-color: #7A43BE;
+    font-family: 'Jersey 10', cursive;
+    color: #C6A9FF;
+    padding: 42px 90px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.button-container {
+    background: rgb(0, 0, 0,0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espaço entre os botões */
+    height: 50vh; /* Altura total da tela */
+}
+
+
+    button:hover {
+        background-color: #1565c0;
+        color:white;
+    }
+
+.result {
+    font-family: 'Jersey 10', cursive;
+    color: white;
+    margin-top: 1rem;
+    padding: 42px 90px;
+    font-size: 2rem;
+    background-color: rgba(122, 67, 190, 0.3);
+    border-radius: 4px;
+}

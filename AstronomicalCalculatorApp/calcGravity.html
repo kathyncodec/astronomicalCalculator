@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Astron�mica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="global">
+
+        <div class="container">
+            <h1>Calcular Gravidade</h1>
+
+            <!--<div class="section">-->
+
+ 
+    <label for="peso">Peso na Terra (kg):</label>
+    <input type="number" id="peso" placeholder="Digite o peso">
+    <label for="planeta">Planeta:</label>
+    <select id="planeta">
+        <option value="">Selecione o Planeta:</option>
+    </select>
+    <button class="convert" onclick="calcularGravidade()">CALCULAR</button>
+    <div id="resultadoGravidade" class="result" style="display: none;"></div>
+
+             <button class="back" onclick="location.href='home.html'">
+                 VOLTAR
+             </button>
+
+                <!--<div class="button-container">
+                    <h2>Select what you want to calculate:</h2>
+                    <button onclick="location.href='convertUnits.html'">
+                        Convert Units
+                    </button> <br />
+                    <button onclick="location.href='calcGravity.html'">
+                        Calculate Gravity
+                    </button>
+                </div>
+
+                <!--<label for="anosLuz">Anos-Luz:</label>
+        <input type="number" id="anosLuz" placeholder="Digite os anos-luz">
+        <button onclick="converterUnidades()">Converter</button>
+        <div id="resultadoConversao" class="result" style="display: none;"></div>-->
+            <!--</div>-->
+        </div>
+
+        <!-- Se��o: C�lculo de Gravidade -->
+        
+    </div>
+    <script src="calgravity.js"></script>
+</body>
+</html>

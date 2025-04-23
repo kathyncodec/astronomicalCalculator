@@ -1,0 +1,60 @@
+# Visual Studio e C#
+*.csproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+*.cache
+
+# Arquivos de build e binários
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.exe
+*.pdb
+*.dll
+*.ilk
+*.tlog
+*.log
+
+# Pacotes NuGet
+packages/
+*.nupkg
+# Mantém o arquivo de lock do NuGet
+!packages.lock.json
+
+# Testes e relatórios
+TestResults/
+*.trx
+*.xml
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*~
+
+# Dependências gerenciadas pelo Visual Studio
+*.vsidx
+*.psess
+*.vsp
+*.pidb
+
+# Ambientes de desenvolvimento
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]nyCPU/
+
+# Arquivos de ambiente local
+appsettings.Development.json
+.env
+
+# Outros
+Thumbs.db
+.DS_Store

@@ -1,0 +1,6 @@
+@AstronomicalCalculatorApi_HostAddress = http://localhost:5007
+
+GET {{AstronomicalCalculatorApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

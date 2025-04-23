@@ -135,10 +135,11 @@ button {
 }
 
 
-    button:hover {
-        background-color: #1565c0;
-        color:white;
-    }
+button:hover {
+    background-color: rgba(122, 67, 190, 0.3);
+    border: 5px 2px solid #C6A9FF;
+    color: white;
+}
 
 .result {
     font-family: 'Jersey 10', cursive;

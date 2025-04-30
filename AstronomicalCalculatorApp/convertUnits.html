@@ -3,47 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Astron�mica</title>
+    <title>Calculadora Astronômica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="teste">
-
         <div class="container">
-                <h1>Converter Unidades</h1>
-                <!--<div class="button-container">-->
-                    <!--<h2>Convert Units</h2>-->
-                    <label for="anosLuz">Anos-luz:</label>
-                    <input type="number" id="anosLuz" placeholder="Digite a quantidade de anos-luz">
-                    <button class="convert" onclick="converterUnidades()">CONVERTER</button>
-                    <div id="resultadoConversao" class="result" style="display: none;"></div>
-                <!--</div>-->
+            <h1>Converter Unidades</h1>
+            <label for="anosLuz">Anos-luz:</label>
+            <input type="number" id="anosLuz" placeholder="Digite a quantidade de anos-luz">
+            <button id="btn-viagem">CONVERTER</button>
+            <div id="resultadoConversao" class="result" style="display: none;"></div>
         </div>
         <button class="back" onclick="location.href='home.html'">
-                        VOLTAR
-                    </button>
-        
-
-            <!--<label for="anosLuz">Anos-Luz:</label>
-        <input type="number" id="anosLuz" placeholder="Digite os anos-luz">
-        <button onclick="converterUnidades()">Converter</button>
-        <div id="resultadoConversao" class="result" style="display: none;"></div>-->
-            <!--</div>-->
-
-
-        <!-- Se��o: C�lculo de Gravidade -->
-        <!--<div class="section">
-        <h2>Calcular Gravidade</h2>
-        <label for="peso">Peso na Terra (kg):</label>
-        <input type="number" id="peso" placeholder="Digite seu peso">
-        <label for="planeta">Planeta:</label>
-        <select id="planeta">
-            <option value="">Selecione um planeta</option>
-        </select>
-        <button onclick="calcularGravidade()">Calcular</button>
-        <div id="resultadoGravidade" class="result" style="display: none;"></div>
-    </div>-->
+            VOLTAR
+        </button>
     </div>
     <script src="App.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Importando o script do fundo estrelado -->
+    <script type="module" src="./background/stars.js"></script>
 </body>
 </html>

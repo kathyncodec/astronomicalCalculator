@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Astronômica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas para o fundo estrelado será adicionado automaticamente pelo stars.js -->
+    <div class="global">
+        <div class="container">
+            <h1>Calculadora Astronômica</h1>
+            <h2 class="titleH2">Selecione o modo:</h2>
+            <button onclick="location.href='convertUnits.html'">
+                Converter Unidades
+            </button> <br />
+            <button onclick="location.href='calcGravity.html'">
+                Calcular Gravidade
+            </button>
+        </div>
+    </div>
+
+    <!-- Importando Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Importando o script do fundo estrelado -->
+    <script type="module" src="./background/stars.js"></script>
+</body>
+</html>

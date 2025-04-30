@@ -5,17 +5,38 @@
   box-sizing: border-box;
 }
 body {
-    background-image: url('./Images/backgroudCalc.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
+    overflow: hidden; /* Evitar barras de rolagem */
+    font-family: Arial, sans-serif;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #8800f5, 0 0 10px #8800f5;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #8800f5, 0 0 30px #8800f5;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #8800f5, 0 0 10px #8800f5;
+    }
+}
+.container, .back, .result {
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+
+/* Garantir que o canvas do Three.js fique no fundo */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Colocar o canvas atrás de todo o conteúdo */
+}
 
 .container {
     display: flex;
@@ -39,6 +60,7 @@ h1 {
 }
 
 h2 {
+    animation: glow 2s ease-in-out infinite;
     font-family: 'Jersey 10', cursive;
     font-weight: normal;
     text-align: center;
@@ -53,6 +75,7 @@ h2 {
 }
 
 label {
+    animation: glow 2s ease-in-out infinite;
     display: block;
     font-family: 'Jersey 10', cursive;
     margin-bottom: 0.5rem;

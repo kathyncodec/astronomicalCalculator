@@ -1,49 +1,49 @@
-# 🌟 Calculadora Astronômica
+# 🌟 Astronomical Calculator
 
-Bem-vindo à **Calculadora Astronômica**, um projeto full-stack que une ciência e encanto visual! 🚀  
-Com uma API RESTful poderosa e uma interface interativa feita com **Three
+Welcome to the **Astronomical Calculator**, a full-stack project that blends science with visual magic! 🚀  
+Featuring a powerful RESTful API and an interactive interface built with **Three.js**, you can explore the universe, convert cosmic distances, and discover your weight on other planets—all set against a backdrop of shimmering stars that dance with your mouse movements. ✨
 
 ---
 
-## 🎯 Funcionalidades
+## 🎯 Features
 
 ### Backend (API)
-- **Conversão de Unidades**: Transforme anos-luz em quilômetros e unidades astronômicas (UA).
-- **Cálculo de Gravidade**: Descubra seu peso em planetas como Marte ou Júpiter.
-- **Listagem de Planetas**: Veja a lista de planetas disponíveis para cálculos.
+- **Unit Conversion**: Transform light-years into kilometers and astronomical units (AU).  
+- **Gravity Calculation**: Find out your weight on planets like Mars or Jupiter.  
+- **Planet Listing**: View all available planets for calculations.
 
-### Frontend (Experiência Visual)
-- **Céu Estrelado**: Um fundo 3D com estrelas brilhantes que se movem com o mouse, criando uma experiência mágica.
-- **Interface Intuitiva**: Formulários simples para interagir com a API.
-- **Animações Cósmicas**: Resultados exibidos com efeitos visuais estelares.
+### Frontend (Visual Experience)
+- **Starry Sky**: A 3D background with twinkling stars that move with your mouse, creating a magical experience.  
+- **Intuitive Interface**: Simple forms to interact with the API.  
+- **Cosmic Animations**: Results displayed with stellar visual effects.
 
 ---
 
-## 🛠 Tecnologias
+## 🛠 Technologies
 
 ### Backend
-- .NET Core (ASP.NET Core)
-- C#
-- API RESTful
+- .NET Core (ASP.NET Core)  
+- C#  
+- RESTful API  
 
 ### Frontend
-- Three.js (renderização 3D)
-- HTML, CSS, JavaScript
+- Three.js (3D rendering)  
+- HTML, CSS, JavaScript  
 
 ---
 
-## 🌌 Endpoints da API
+## 🌌 API Endpoints
 
-### 1. Converter Unidades
-Converte anos-luz em quilômetros e unidades astronômicas.
+### 1. Convert Units
+Converts light-years to kilometers and astronomical units.
 
-**Método:** `GET`  
-**URL:** `/api/Astronomical/converter-unidades?anosLuz={valor}`  
+**Method:** `GET`  
+**URL:** `/api/Astronomical/converter-unidades?anosLuz={value}`  
 
-**Parâmetros:**  
-- `anosLuz` (double): Valor em anos-luz (positivo).
+**Parameters:**  
+- `anosLuz` (double): Light-years value (positive).  
 
-**Resposta (200):**  
+**Response (200):**  
 ```json
 {
   "AnosLuz": 1,
@@ -52,113 +52,113 @@ Converte anos-luz em quilômetros e unidades astronômicas.
 }
 ```
 
-**Erro (400):**  
-- `"Anos-luz deve ser um valor positivo."`
+**Error (400):**  
+- `"Light-years must be a positive value."`
 
-### 2. Calcular Gravidade
-Calcula seu peso em outro planeta.
+### 2. Calculate Gravity
+Calculates your weight on another planet.
 
-**Método:** `GET`  
-**URL:** `/api/Astronomical/calcular-gravidade?planetaIndex={índice}&peso={valor}`  
+**Method:** `GET`  
+**URL:** `/api/Astronomical/calcular-gravidade?planetaIndex={index}&peso={value}`  
 
-**Parâmetros:**  
-- `planetaIndex` (int): Índice do planeta (0 a 7).  
-- `peso` (double): Peso na Terra em kg (maior que zero).
+**Parameters:**  
+- `planetaIndex` (int): Planet index (0 to 7).  
+- `peso` (double): Weight on Earth in kg (greater than zero).  
 
-**Resposta (200):**  
+**Response (200):**  
 ```json
 {
-  "Planeta": "Marte",
+  "Planeta": "Mars",
   "PesoNoPlaneta": 37.86
 }
 ```
 
-**Erros (400):**  
-- `"Planeta inválido."`  
-- `"Peso deve ser maior que zero."`
+**Errors (400):**  
+- `"Invalid planet."`  
+- `"Weight must be greater than zero."`
 
-### 3. Listar Planetas
-Retorna a lista de planetas disponíveis.
+### 3. List Planets
+Returns the list of available planets.
 
-**Método:** `GET`  
+**Method:** `GET`  
 **URL:** `/api/Astronomical/planetas`  
 
-**Resposta (200):**  
+**Response (200):**  
 ```json
 [
-  { "Index": 0, "Nome": "Mercúrio" },
-  { "Index": 1, "Nome": "Vênus" },
-  { "Index": 2, "Nome": "Terra" },
-  { "Index": 3, "Nome": "Marte" },
-  { "Index": 4, "Nome": "Júpiter" },
-  { "Index": 5, "Nome": "Saturno" },
-  { "Index": 6, "Nome": "Urano" },
-  { "Index": 7, "Nome": "Netuno" }
+  { "Index": 0, "Nome": "Mercury" },
+  { "Index": 1, "Nome": "Venus" },
+  { "Index": 2, "Nome": "Earth" },
+  { "Index": 3, "Nome": "Mars" },
+  { "Index": 4, "Nome": "Jupiter" },
+  { "Index": 5, "Nome": "Saturn" },
+  { "Index": 6, "Nome": "Uranus" },
+  { "Index": 7, "Nome": "Neptune" }
 ]
 ```
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-### Pré-requisitos
-- **Backend**: .NET SDK 6.0 ou superior, editor de código (ex.: VS Code).  
-- **Frontend**: Node.js (se usar npm), navegador com suporte a WebGL.
+### Prerequisites
+- **Backend**: .NET SDK 6.0 or higher, code editor (e.g., VS Code).  
+- **Frontend**: Node.js (if using npm), browser with WebGL support.
 
-### Passos
+### Steps
 
 #### Backend
-1. Clone o repositório:  
+1. Clone the repository:  
    ```bash
-   git clone <URL_DO_REPOSITÓRIO>
+   git clone <REPOSITORY_URL>
    ```
-2. Entre no diretório do backend:  
+2. Navigate to the backend directory:  
    ```bash
    cd AstronomicalCalculatorApi
    ```
-3. Restaure as dependências:  
+3. Restore dependencies:  
    ```bash
    dotnet restore
    ```
-4. Inicie a API:  
+4. Start the API:  
    ```bash
    dotnet run
    ```
-5. Acesse: `http://localhost:5000`
+5. Access: `http://localhost:5000`
 
 #### Frontend
-1. Entre no diretório do frontend:  
+1. Navigate to the frontend directory:  
    ```bash
    cd AstronomicalCalculatorFrontend
    ```
-2. Instale as dependências (se houver):  
+2. Install dependencies (if applicable):  
    ```bash
    npm install
    ```
-3. Inicie o servidor:  
+3. Start the server:  
    ```bash
    npm start
    ```
-4. Acesse: `http://localhost:3000`  
-5. Certifique-se de que o backend está rodando.
+4. Access: `http://localhost:3000`  
+5. Ensure the backend is running for API requests.
 
-### Integração
-- O frontend consome a API em `http://localhost:5000/api/Astronomical`. Ajuste a URL no código do frontend se necessário.  
-- As estrelas no fundo reagem ao movimento do mouse, tornando os cálculos ainda mais envolventes.
-
----
-
-## 🌠 Visual com Three.js
-- **Estrelas Dinâmicas**: Um fundo 3D com estrelas que brilham e se movem com o mouse, criando um céu cósmico interativo.  
-- **Interatividade**: Formulários simples com animações que destacam os resultados.  
-- **Imersão**: Uma experiência visual que faz você se sentir explorando o universo!
+### Integration
+- The frontend makes requests to `http://localhost:5000/api/Astronomical`. Update the base URL in the frontend code if needed.  
+- The stars in the background respond to mouse movements, enhancing the calculations with a captivating visual experience.
 
 ---
 
-## 🧪 Exemplos
+## 🌠 Visuals with Three.js
+- **Dynamic Stars**: A 3D background with twinkling stars that move with your mouse, creating an interactive cosmic sky.  
+- **Interactivity**: Simple forms paired with animations that highlight results.  
+- **Immersion**: A visual experience that makes you feel like you're exploring the universe!
 
-### Converter 2 anos-luz
-Digite "2" no campo de anos-luz:  
+---
+
+## 🧪 Examples
+
+### Convert 2 Light-Years
+Enter "2" in the light-years field:  
 ```json
 {
   "AnosLuz": 2,
@@ -166,38 +166,38 @@ Digite "2" no campo de anos-luz:
   "Quilometros": 18922000000000
 }
 ```
-As estrelas podem pulsar para ilustrar a distância! ✨
+The stars may pulse to illustrate the distance! ✨
 
-### Peso em Marte
-Escolha "Marte" (índice 3) e insira "70" kg:  
+### Weight on Mars
+Select "Mars" (index 3) and enter "70" kg:  
 ```json
 {
-  "Planeta": "Marte",
+  "Planeta": "Mars",
   "PesoNoPlaneta": 26.48
 }
 ```
-O resultado aparece com um brilho estelar na interface.
+The result appears with a stellar glow in the interface.
 
 ---
 
-## 🤝 Contribuições
-Quer adicionar um toque cósmico? 🌟  
-1. Faça um fork do repositório.  
-2. Crie uma branch:  
+## 🤝 Contributions
+Want to add a cosmic touch? 🌟  
+1. Fork the repository.  
+2. Create a branch:  
    ```bash
-   git checkout -b minha-feature
+   git checkout -b my-feature
    ```
-3. Commit suas mudanças:  
+3. Commit your changes:  
    ```bash
-   git commit -m "Nova feature"
+   git commit -m "New feature"
    ```
-4. Envie:  
+4. Push:  
    ```bash
-   git push origin minha-feature
+   git push origin my-feature
    ```
-5. Abra um Pull Request.
+5. Open a Pull Request.
 
 ---
 
-## 📜 Licença
-[MIT License](LICENSE) - Explore, modifique e compartilhe!
+## 📜 License
+[MIT License](LICENSE) - Explore, modify, and share!

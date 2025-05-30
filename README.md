@@ -137,7 +137,7 @@ Returns the list of available planets.
    ```
 3. Start the server:  
    ```bash
-   npm start
+   npx vite
    ```
 4. Access: `http://localhost:3000`  
 5. Ensure the backend is running for API requests.
